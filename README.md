@@ -6,6 +6,7 @@ This repository was primarily done for myself. I use this software. Before it wa
 ### How to switch between build a binary version and not binary package?
 **Answer:**
 >git checkout binary #Binary version
+
 >git checkout source #Source version
 
 ### How exactly to collect the package?
