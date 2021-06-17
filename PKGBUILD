@@ -10,7 +10,7 @@ url='https://github.com/shadowsocks/shadowsocks-rust'
 license=('MIT')
 depends=('openssl')
 #makedepends=()
-conflicts=(shadowsocks-rust)
+conflicts=("shadowsocks-rust" "shadowsocks-git")
 source=(
   "${_pkgname}-v${pkgver}.tar.xz::${url}/releases/download/v${pkgver}/${_pkgname_dl}-v${pkgver}.${arch}-unknown-linux-gnu.tar.xz"
   'shadowsocks-rust@.service'
@@ -36,7 +36,7 @@ package() {
   install -Dm644 "shadowsocks-rust@.service" "${pkgdir}/usr/lib/systemd/system/shadowsocks-rust@.service"
   install -Dm644 "shadowsocks-rust-server@.service" "${pkgdir}/usr/lib/systemd/system/shadowsocks-rust-server@.service"
   install -Dm644 "shadowsocks-rust-manager@.service" "${pkgdir}/usr/lib/systemd/system/shadowsocks-rust-manager@.service"
-  install -Dm644 "sysusers" "$pkgdir"/usr/lib/sysusers.d/$pkgname.conf
+  install -Dm644 "sysusers" "${pkgdir}"/usr/lib/sysusers.d/${pkgname}.conf
   install -Dm644 "config_ext.json" "${pkgdir}/etc/shadowsocks/config_ext_rust.json.example"
   install -Dm644 "config.json" "${pkgdir}/etc/shadowsocks/config_rust.json.example"
 }
