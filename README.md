@@ -17,5 +17,5 @@ For binary version command in the terminal such:
 For source version command in the terminal such:
 >makepkg -scCr
 
-###How to install?
+### How to install?
 >sudo pacman -U PACKAGE
