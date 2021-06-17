@@ -12,7 +12,7 @@ makedepends=('cargo' 'libsodium' 'git')
 provides=('shadowsocks-rust-git' 'shadowsocks-rust-bin')
 conflicts=('shadowsocks-rust-git' 'shadowsocks-rust-bin')
 source=(
-  "${pkgname}::git+${url}.git#tag=v$pkgver"
+  "${pkgname}::git+${url}.git#tag=v${pkgver}"
   'shadowsocks-rust@.service'
   'shadowsocks-rust-server@.service'
   'shadowsocks-rust-manager@.service'
@@ -30,7 +30,7 @@ sha512sums=('SKIP'
             'SKIP')
 build() {
   cd "${srcdir}/${pkgname}"
-  export RUSTFLAGS="-C target-cpu=native"
+  #export RUSTFLAGS="-C target-cpu=native"
   cargo build --release
 }
 
