@@ -3,6 +3,7 @@
 /ss-rust-pkgbuild
 /pkg
 /src
+/shadowsocks-rust
 #Files
 *.pkg.tar.xz
 *.pkg.tar.zst
