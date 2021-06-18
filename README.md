@@ -19,7 +19,7 @@ And we see that there is such a version
 Go to this commit.
 >git checkout v1.11.0-bin
 
-**Designation**:bin-binary; src-source version
+**Designation**:bin-binary version; src-source version
 
 ### How exactly to collect the package?
 Depending on which the version you need on that branch and switch.
