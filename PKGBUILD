@@ -1,7 +1,7 @@
 # Maintainer:
 
 pkgname=shadowsocks-rust
-pkgver=1.11.0
+pkgver=1.11.1
 pkgrel=1
 pkgdesc='A Rust port of shadowsocks https://shadowsocks.org/'
 arch=('any')
