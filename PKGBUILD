@@ -2,7 +2,7 @@
 _pkgname_dl=shadowsocks
 _pkgname=shadowsocks-rust
 pkgname=shadowsocks-rust-bin
-pkgver=1.11.1
+pkgver=1.11.2
 pkgrel=1
 pkgdesc='A Rust port of shadowsocks https://shadowsocks.org/'
 arch=('x86_64')
@@ -20,7 +20,7 @@ source=(
   'config.json'
   'config_ext.json'
 )
-sha512sums=('b39dc596178e4273c71ad655ae1a8d5c081c38045f46d07e194fb367725c175c6cf52285a37981a63af5e2ac1561b50bfd13e357a92c8e3a11d8fdc97b4a0292'
+sha512sums=('26834fd2c30565edaf130443f428296e3383366ece4774e6e9628f69ad7cf9ea9dc2ee9246c2bb1b22c7b9d270ed34a73e10076aa8f8b24c2f9bb3ccb43e7d1d'
             '430503b00615b6b441179f76dfa3cf267d1b3a5af8ddd502a2f25bb1000bcf4a2565334baa3d37396b806b920579a01f36736e529b30c7176d909d0ed3079f00'
             'a745c520e8f75e02ef9c455be8c80c449bd5b0b83b3f99d3782ac73db0ebfaa44bb98cd1d5707a6e06776244d024a16d43ad5965d413afc847205e13b3e8c467'
             'b1d2543e99fc6450e84cdfb487e4aacc4acc72a681d9e72d5d3772023df18aab7dac36826e45b1ad21288f8839a857f55f4a53dcefe952d97a74d47f27ea1650'
