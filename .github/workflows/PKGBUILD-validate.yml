@@ -51,9 +51,3 @@ jobs:
           target: 'run'
           pkgname: '.build_action'
           command: 'sslocal-rust -V'
-
-      - name: Upload package to WebDAV
-        id: validate-sslocal
-        run: |
-          pacman -Sy curl --noconfirm
-          curl -T .build_action/shadowsocks-rust-*-*-x86_64.pkg.tar.zst https://fargos.tk
