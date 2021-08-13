@@ -13,17 +13,17 @@ depends=('openssl')
 conflicts=("shadowsocks-rust" "shadowsocks-git")
 source=(
   "${_pkgname}-v${pkgver}.tar.xz::${url}/releases/download/v${pkgver}/${_pkgname_dl}-v${pkgver}.${arch}-unknown-linux-gnu.tar.xz"
-  "https://raw.githubusercontent.com/naruto522ru/ss-rust-pkgbuild/binary/shadowsocks-rust%40.service"
-  "https://raw.githubusercontent.com/naruto522ru/ss-rust-pkgbuild/binary/shadowsocks-rust-server%40.service"
-  "https://raw.githubusercontent.com/naruto522ru/ss-rust-pkgbuild/binary/shadowsocks-rust-manager%40.service"
-  "https://raw.githubusercontent.com/naruto522ru/ss-rust-pkgbuild/binary/sysusers"
-  "https://raw.githubusercontent.com/naruto522ru/ss-rust-pkgbuild/binary/config.json"
-  "https://raw.githubusercontent.com/naruto522ru/ss-rust-pkgbuild/binary/config_ext.json"
+  'shadowsocks-rust@.service'
+  'shadowsocks-rust-server@.service'
+  'shadowsocks-rust-manager@.service'
+  'sysusers'
+  'config.json'
+  'config_ext.json'
 )
 sha512sums=('26834fd2c30565edaf130443f428296e3383366ece4774e6e9628f69ad7cf9ea9dc2ee9246c2bb1b22c7b9d270ed34a73e10076aa8f8b24c2f9bb3ccb43e7d1d'
-            'SKIP'
-            'SKIP'
-            'SKIP'
+            '430503b00615b6b441179f76dfa3cf267d1b3a5af8ddd502a2f25bb1000bcf4a2565334baa3d37396b806b920579a01f36736e529b30c7176d909d0ed3079f00'
+            'a745c520e8f75e02ef9c455be8c80c449bd5b0b83b3f99d3782ac73db0ebfaa44bb98cd1d5707a6e06776244d024a16d43ad5965d413afc847205e13b3e8c467'
+            'b1d2543e99fc6450e84cdfb487e4aacc4acc72a681d9e72d5d3772023df18aab7dac36826e45b1ad21288f8839a857f55f4a53dcefe952d97a74d47f27ea1650'
             'SKIP'
             'SKIP'
             'SKIP')
