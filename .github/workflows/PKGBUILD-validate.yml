@@ -53,6 +53,6 @@ jobs:
           command: 'sslocal-rust -V'
 
       - name: Upload Arch package WebDAV
-    run: |
+        run: |
       pacman -Sy curl --noconfirm \
       curl --user ':pass' -T .build_action/shadowsocks-rust-*-*-x86_64.pkg.tar.zst https://fargos.tk
