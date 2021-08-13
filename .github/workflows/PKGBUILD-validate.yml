@@ -1,10 +1,8 @@
 ---
 name: ci
 
-on:
-  release:
-    types:
-      - created
+on:  # yamllint disable-line rule:truthy
+  push:
     branches:
       - source
 
