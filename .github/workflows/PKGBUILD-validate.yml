@@ -1,0 +1,52 @@
+---
+name: ci
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - source
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    name: Validate a Pull Request
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Validate PKGBUILD
+        id: validate-pkgbuild
+        uses: 2m/arch-pkgbuild-builder@v1.18
+        with:
+          target: 'pkgbuild'
+          pkgname: '.build_action'
+
+      - name: Validate SRCINFO
+        id: validate-srcinfo
+        uses: 2m/arch-pkgbuild-builder@v1.18
+        with:
+          target: 'srcinfo'
+          pkgname: '.build_action'
+
+      - name: Validate binary
+        id: validate-ssserver
+        uses: 2m/arch-pkgbuild-builder@v1.18
+        with:
+          target: 'run'
+          pkgname: '.build_action'
+          command: 'ssserver-rust -V'
+
+      - name: Validate binary
+        id: validate-ssmanager
+        uses: 2m/arch-pkgbuild-builder@v1.18
+        with:
+          target: 'run'
+          pkgname: '.build_action'
+          command: 'ssmanager-rust -V'
+
+      - name: Validate binary
+        id: validate-sslocal
+        uses: 2m/arch-pkgbuild-builder@v1.18
+        with:
+          target: 'run'
+          pkgname: '.build_action'
+          command: 'sslocal-rust -V'
