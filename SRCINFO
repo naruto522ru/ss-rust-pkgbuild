@@ -1,6 +1,6 @@
 pkgbase = shadowsocks-rust
 	pkgdesc = A Rust port of shadowsocks https://shadowsocks.org/
-	pkgver = 1.11.1
+	pkgver = 1.11.2
 	pkgrel = 1
 	url = https://github.com/shadowsocks/shadowsocks-rust
 	arch = any
@@ -13,7 +13,7 @@ pkgbase = shadowsocks-rust
 	provides = shadowsocks-rust-bin
 	conflicts = shadowsocks-rust-git
 	conflicts = shadowsocks-rust-bin
-	source = shadowsocks-rust::git+https://github.com/shadowsocks/shadowsocks-rust.git#tag=v1.11.1
+	source = shadowsocks-rust::git+https://github.com/shadowsocks/shadowsocks-rust.git#tag=v1.11.2
 	source = shadowsocks-rust@.service
 	source = shadowsocks-rust-server@.service
 	source = shadowsocks-rust-manager@.service
