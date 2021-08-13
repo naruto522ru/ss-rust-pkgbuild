@@ -1,4 +1,4 @@
-# ss-rust-pkgbuild
+# ss-rust-pkgbuild [![ci](https://github.com/naruto522ru/ss-rust-pkgbuild/actions/workflows/PKGBUILD-validate.yml/badge.svg?branch=binary)](https://github.com/naruto522ru/ss-rust-pkgbuild/actions/workflows/PKGBUILD-validate.yml)
 ---
 ### Purpose repository
 This repository was primarily done for myself. I use this software. Before it was created, [this repository](https://github.com/naruto522ru/shadowsocks-rust-PKGBUILD) in [AUR](https://aur.archlinux.org/) was not a binary, and there is still no stable branch. There is no software on Rust. Not every computer compile someone can use the binary version of this software.
