@@ -17,8 +17,9 @@ jobs:
         id: validate-pkgbuild
         uses: 2m/arch-pkgbuild-builder@v1.16
         with:
-          target: 'pkgbuild'
-          pkgname: 'build'
+          debug: true
+	  target: pkgbuild
+          pkgname: build/
 
       - name: Validate binary
         id: validate-ssserver
