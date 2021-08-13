@@ -28,6 +28,19 @@ jobs:
           target: 'run'
           pkgname: 'build'
           command: 'ssserver-rust -V'
-          command: 'ssmanager-rust -V'
-          command: 'sslocal-rust -V'
 
+      - name: Validate binary
+        id: validate-binary
+        uses: 2m/arch-pkgbuild-builder@v1.16
+        with:
+          target: 'run'
+          pkgname: 'build'
+          command: 'ssmanager-rust -V'
+
+      - name: Validate binary
+        id: validate-binary
+        uses: 2m/arch-pkgbuild-builder@v1.16
+        with:
+          target: 'run'
+          pkgname: 'build'
+          command: 'sslocal-rust -V'
