@@ -21,7 +21,7 @@ jobs:
           pkgname: 'build'
 
       - name: Validate binary
-        id: validate ssserver
+        id: validate-ssserver
         uses: 2m/arch-pkgbuild-builder@v1.16
         with:
           target: 'run'
@@ -29,7 +29,7 @@ jobs:
           command: 'ssserver-rust -V'
 
       - name: Validate binary
-        id: validate ssmanager
+        id: validate-ssmanager
         uses: 2m/arch-pkgbuild-builder@v1.16
         with:
           target: 'run'
@@ -37,7 +37,7 @@ jobs:
           command: 'ssmanager-rust -V'
 
       - name: Validate binary
-        id: validate sslocal
+        id: validate-sslocal
         uses: 2m/arch-pkgbuild-builder@v1.16
         with:
           target: 'run'
