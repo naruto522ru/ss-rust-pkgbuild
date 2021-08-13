@@ -3,6 +3,8 @@ name: ci
 
 on:
   release:
+    types:
+      - created
     branches:
       - source
 
