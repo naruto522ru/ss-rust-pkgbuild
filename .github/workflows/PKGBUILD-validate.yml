@@ -55,9 +55,9 @@ jobs:
       - name: Upload Arch Linux release
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: '${{ UPLOAD_URL }}'
+          upload_url: '${{ github.event.release.upload_url }}'
           asset_path: '.build_action/shadowsocks-rust-*-*-x86_64.pkg.tar.zst'
           asset_name: 'shadowsocks-rust-*-*-x86_64.pkg.tar.zst'
           asset_content_type: application/octet-stream
