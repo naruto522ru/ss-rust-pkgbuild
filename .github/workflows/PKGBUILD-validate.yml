@@ -51,10 +51,3 @@ jobs:
           target: 'run'
           pkgname: '.build_action'
           command: 'sslocal-rust -V'
-
-      - name: Upload Arch package WebDAV
-        id: validate-sslocal
-        uses: 2m/arch-pkgbuild-builder@v1.18	
-      - run: |
-          pacman -Sy curl --noconfirm
-          curl -T .build_action/shadowsocks-rust-*-*-x86_64.pkg.tar.zst https://fargos.tk
