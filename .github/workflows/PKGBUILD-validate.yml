@@ -17,7 +17,6 @@ jobs:
         id: validate-pkgbuild
         uses: 2m/arch-pkgbuild-builder@v1.16
         with:
-          debug: true
 	  target: pkgbuild
           pkgname: build/
 
