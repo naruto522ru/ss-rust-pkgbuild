@@ -51,7 +51,7 @@ jobs:
           pkgname: '.build_action'
           command: 'sslocal-rust -V'
 
-- name: Upload Arch Linux release
+      - name: Upload Arch Linux release
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
