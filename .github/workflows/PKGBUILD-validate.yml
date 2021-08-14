@@ -6,6 +6,7 @@ on:
     # Sequence of patterns matched against refs/tags
     tags:
     - 'v*'
+  workflow_dispatch:
 
 jobs:
   validation:
