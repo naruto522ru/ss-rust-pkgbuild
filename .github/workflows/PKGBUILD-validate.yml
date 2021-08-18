@@ -4,10 +4,10 @@ name: PKGBUILD-validate
 on:
   push:
     # Sequence of patterns matched against refs/tags
+    branches:
+    - source
     tags:
     - 'v*'
-    branches:
-      - source
   workflow_dispatch:
 
 jobs:
