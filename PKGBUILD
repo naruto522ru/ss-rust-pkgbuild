@@ -1,7 +1,7 @@
 # Maintainer:
 
 pkgname=shadowsocks-rust
-pkgver=1.15.2
+pkgver=1.15.3
 pkgrel=1
 pkgdesc='A Rust port of shadowsocks https://shadowsocks.org/'
 arch=('any')
@@ -9,6 +9,7 @@ url='https://github.com/shadowsocks/shadowsocks-rust'
 license=('MIT')
 depends=('openssl')
 makedepends=('rust' 'libsodium' 'git')
+optdepends=('v2ray-plugin-git: support SIP003 plugin')
 provides=('shadowsocks-rust-git' 'shadowsocks-rust-bin')
 conflicts=('shadowsocks-rust-git' 'shadowsocks-rust-bin')
 source=(
@@ -31,7 +32,7 @@ sha512sums=('SKIP'
 build() {
   cd "${srcdir}/${pkgname}"
   #export RUSTFLAGS="-C target-cpu=native"
-  cargo build --release
+  cargo build --release -F local-redir -F local-tun
 }
 
 package() {
