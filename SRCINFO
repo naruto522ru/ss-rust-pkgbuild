@@ -1,7 +1,7 @@
 pkgbase = shadowsocks-rust
 	pkgdesc = A Rust port of shadowsocks https://shadowsocks.org/
 	pkgver = 1.15.3
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/shadowsocks/shadowsocks-rust
 	arch = any
 	license = MIT
@@ -10,6 +10,7 @@ pkgbase = shadowsocks-rust
 	makedepends = git
 	depends = openssl
 	optdepends = v2ray-plugin-git: support SIP003 plugin
+	optdepends = simple-obfs: support simple obfuscating tool
 	provides = shadowsocks-rust-git
 	provides = shadowsocks-rust-bin
 	conflicts = shadowsocks-rust-git

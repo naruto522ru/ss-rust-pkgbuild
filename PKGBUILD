@@ -2,14 +2,15 @@
 
 pkgname=shadowsocks-rust
 pkgver=1.15.3
-pkgrel=1
+pkgrel=2
 pkgdesc='A Rust port of shadowsocks https://shadowsocks.org/'
 arch=('any')
 url='https://github.com/shadowsocks/shadowsocks-rust'
 license=('MIT')
 depends=('openssl')
 makedepends=('rust' 'libsodium' 'git')
-optdepends=('v2ray-plugin-git: support SIP003 plugin')
+optdepends=('v2ray-plugin-git: support SIP003 plugin'
+            'simple-obfs: support simple obfuscating tool')
 provides=('shadowsocks-rust-git' 'shadowsocks-rust-bin')
 conflicts=('shadowsocks-rust-git' 'shadowsocks-rust-bin')
 source=(
